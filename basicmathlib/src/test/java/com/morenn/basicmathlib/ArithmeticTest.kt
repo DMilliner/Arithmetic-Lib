@@ -42,9 +42,23 @@ internal class ArithmeticTest {
     }
 
     @Test
-    fun isOd() {
-        assertEquals(isOd(0), false)
-        assertEquals(isOd(16), false)
-        assertEquals(isOd(-25), true)
+    fun isOdd() {
+        assertEquals(isOdd(0), false)
+        assertEquals(isOdd(16), false)
+        assertEquals(isOdd(-25), true)
+    }
+
+    @Test
+    fun isPrime() {
+        assertEquals(isPrime(0), true)
+        assertEquals(isPrime(1), true)
+        assertEquals(isPrime(16), false)
+        assertEquals(isPrime(-29), true)
+    }
+
+    @Test
+    fun getGCD() {
+        assertEquals(getGCD(81, 153), 9)
+        assertEquals(getGCD(153, 81), 9)
     }
 }
