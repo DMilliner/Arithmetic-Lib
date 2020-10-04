@@ -1,0 +1,3 @@
+rootProject.name = "basicMath"
+
+include ':app', ':basicmathlib'
